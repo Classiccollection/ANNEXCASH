@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;url=login.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Annex Cash Limited</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4b2e39;
+        }
+        .container {
+            text-align: center;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            animation: fadeIn 3s ease-in-out;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            animation: roar 3s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes roar {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .fadeOut {
+            animation: fadeOut 2s forwards;
+        }
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="welcome-container">
+        <img src="lion.png" alt="Roaring Lion"> <!-- Replace with your lion image -->
+        <h1>Welcome to Annex Cash Limited</h1>
+    </div>
+</body>
+</html>
